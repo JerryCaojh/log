@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiahao (Jerry) Cao</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;700&display=swap');
+
+        body {
+            font-family: 'Source Code Pro', monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #004444;
+            color: #e2f2f2
+        }
+
+        .header p {
+            size: 2em;
+            font-weight: 200;
+            padding: 1%;
+        }
+
+        .main {
+            float: right;
+            padding: 0.8%;
+            width: 80%-0.8%
+        }
+
+        .column {
+            float: left;
+            width: 20%;
+            height: 100vh - 2%;
+            color: #004444;
+        }
+
+        .column li {
+            list-style-type: none;
+            padding: 0;
+            margin: 4%
+        }
+
+        .column ul {
+            padding: 0;
+            margin: 0
+        }
+
+        .column a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        .about {
+            margin: 4% 4% 4% 8%;
+        }
+
+        p::selection,
+        a::selection,
+        b::selection,
+        code::selection,
+        h2::selection {
+            background-color: #000000;
+            color: #ffffff
+        }
+
+        p {
+            margin: 0;
+            padding: 0
+        }
+
+        b {
+            font-weight: 700;
+        }
+
+        h2 {
+            margin: 0
+        }
+
+        code {
+            background-color: #f1f1f1;
+            color: crimson;
+            font: inherit;
+            font-weight: 400;
+            border-radius: 3px;
+        }
+    </style>
+    <script>
+        function doTime() {
+            const d = new Date();
+            let aryD = d.toString().split(' ')
+            let text = aryD[0] + ' ' + aryD[1] + ' ' + aryD[2] + ' ' + aryD[3] + ' ' + aryD[4] + '.' + d.getMilliseconds() + ' ' + aryD[5];
+            document.getElementById("time").innerHTML = text;
+        }
+        setInterval(doTime, 10);
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <p id="time"></p>
+    </div>
+    <div class="main">
+        <h2 id="programming">.myProgrammingJourney</h2>
+    </div>
+    <div class="column">
+        <ul>
+            <li><a href="#programming">.my<b>Programming</b>Journey</a></li>
+            <li style="padding-left: 5%;"><a href="#python">.of<b>Python</b></a></li>
+            <li style="padding-left: 5%;"><a href="#html-css-js">.of<code><b>[HTML, CSS, JS]</b></code></a></li>
+            <li style="padding-left: 5%;"><a href="#octave">.of<b>Octave</b></a></li>
+            <li style="padding-left: 5%;"><a href="#r">.of<b>R</b></a></li>
+            <li><a href="#stem">.<b>STEM</b></a></li>
+            <li id="about"><a href="#about">.<b>about</b>Myself</a></li>
+        </ul>
+        <div class="about">
+            <a href="https://github.com/JerryCaojh/JerryCaojh/blob/main/README.md"><code>README.md</code></a>
+            <p>Rectroy '24</p>
+            <p>Pomfret, CT</p>
+            <P>from</P>
+            <p>Shanghai, China</p>
+        </div>
+    </div>
+</body>
+
+</html>
